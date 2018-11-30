@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+BIN="$(dirname "$0")"
+ROOT="${BIN}/.."
+
+rm -rf ${ROOT}/build ${ROOT}/dist ${ROOT}/docs/build ${ROOT}/*.egg-info ${ROOT}/.coverage ${ROOT}/.tox ${ROOT}/.cache ${ROOT}/.pytest_cache ${ROOT}/.benchmarks
+
+find -name *.so -delete
+
